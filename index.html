@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <!-- 
+    favicons
+    -->
+  <link rel="shortcut icon" href="./Assets/N.png" type="image/svg+xml">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+       
+      }
+      body{
+        background: rgb(35, 35, 35);
+        overflow-x: hidden;
+      }
+      header {
+        background-image: url(./Assets/IN-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_24a485f6-1820-42be-9b60-1b066f1eb869_large.jpg);
+        height: 90vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .container {
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 120px;
+        padding: 24px 48px;
+        /* border: 3px solid red; */
+      }
+      .left-header img {
+        width: 200px;
+      }
+      .right-header select {
+        width: 132px;
+        height: 32px;
+        background-color: inherit;
+        color: #ffff;
+        font-weight: bold;
+        padding: 0px 6px;
+        border-radius: 4px;
+      }
+      .right-header button {
+        width: 75px;
+        height: 32px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        background: #e50914;
+        color: #ffff;
+      }
+      .main-content {
+        margin-top: 100px;
+      }
+      .main-content h1 {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto,
+          Ubuntu, sans-serif;
+        margin: 10px 0px;
+      }
+      .main-content p {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto,
+          Ubuntu, sans-serif;
+        margin: 20px 0px;
+      }
+      #para-1{
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto,
+          Ubuntu, sans-serif;
+      }
+      .main-content div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px 10px;
+      }
+      .main-content input {
+        width: 370px;
+        height: 56px;
+        background-color: inherit;
+        border: 0.5px solid #fff;
+        border-radius: 4px;
+        margin: 0px 10px;
+      }
+
+      .main-content button {
+        width: 208px;
+        height: 57.5px;
+        background-color: inherit;
+        border: none;
+        background: #c11119;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+
+      /* 
+        section-1
+      */
+      .section-1,.section-2,.section-3,.section-4{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin: 10px 0px;
+        width: 100vw;
+        height: 582px;
+        background-color: #000;
+        
+      }
+      .section-1 div{
+        margin-top: 40px; 
+      }
+     
+      .container-1 div{
+       margin-top: 50px;
+      }
+      #para-2{
+        text-align: center;
+       color: #fff;
+       font-weight: bold;
+       font-size: 48px;
+      }
+      #para-3{
+        font-size: 24px;
+        color: #fff;
+        margin-left: 200px;
+        text-align: justify;
+      }
+      .right-section{
+        display: flex;
+        position: relative;
+        z-index: 100;
+      }
+      .right-section video{
+        position:absolute;
+        top: 110px;
+        left: 90px;
+        z-index: -100;
+        width: 532px;
+        
+      }
+      .section-3 video{
+        position:absolute;
+        top: 30px;
+        left: 150px;
+        z-index: -100;
+        width: 480px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-section">
+          <div class="left-header">
+            <img src="./Assets/580b57fcd9996e24bc43c529.png" alt="" />
+          </div>
+          <div class="right-header">
+            <select
+              name="LanguageSelect"
+              data-uia="language-picker-header"
+            >
+              <option lang="en" label="English" value="en-IN" selected="">
+                English
+              </option>
+              <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+            </select>
+            <button class="btn1">Sign in</button>
+          </div>
+        </div>
+        <div class="main-content">
+          <h1>Unlimited movies, TV shows and more</h1>
+          <p>Watch anywhere. Cancel anytime.</p>
+          <p id="para-1">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div>
+            <div>
+              <input
+                autocomplete="email"
+                minlength="5"
+                maxlength="50"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <button>Get Started ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+        <div class="section-1">
+            <div class="container-1">
+                <div id="para-2">
+                    Enjoy on your TV
+                </div>
+                <div id="para-3">
+                    Watch on smart TVs, PlayStation, Xbox, Chromecast,<br>
+                    Apple TV, Blu-ray players and more.
+
+
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="./Assets/tv.png" alt="">
+                <video src="./Assets/video-tv-in-0819.m4v" controls autoplay="" playsinline="" muted="" loop=""></video>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="right-section">
+                <img src="./Assets/mobile-0819.jpg" alt="">
+                
+            </div>
+            <div class="container-1">
+                <div id="para-2">
+                    Download your shows to watch offline
+                </div>
+                <div id="para-3">
+                    Save your favourites easily and always have something to watch.
+
+
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <div class="container-1">
+                <div id="para-2">
+                    Watch everywhere
+                </div>
+                <div id="para-3">
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="./Assets/device-pile-in.png" alt="">
+                <video src="./Assets/video-devices-in.m4v" controls autoplay="" playsinline="" muted="" loop=""></video>
+            </div>
+        </div>
+        <div class="section-4">
+            <div class="right-section">
+                <img src="./Assets/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png" alt="">
+            </div>
+            <div class="container-1">
+                <div id="para-2">
+                    Create profiles for kids
+                </div>
+                <div id="para-3">
+                    Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
